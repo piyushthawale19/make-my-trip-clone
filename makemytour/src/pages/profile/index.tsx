@@ -212,7 +212,7 @@ const ProfilePage = () => {
         </div>
 
         <Tabs defaultValue="profile" className="space-y-6 text-black">
-          <TabsList className="grid w-full grid-cols-4 max-w-2xl text-black ">
+          <TabsList className="grid w-full grid-cols-4 max-w-2xl text-black border border-black">
             <TabsTrigger value="profile">Profile</TabsTrigger>
             <TabsTrigger value="bookings">Bookings</TabsTrigger>
             <TabsTrigger value="payments">Payments</TabsTrigger>
@@ -501,7 +501,7 @@ const ProfilePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
+                  <CardTitle className="flex items-center gap-2 text-white">
                     <DollarSign className="w-5 h-5" />
                     Currency Preference
                   </CardTitle>
@@ -525,7 +525,7 @@ const ProfilePage = () => {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
+                  <CardTitle className="flex items-center gap-2 text-white">
                     <Globe className="w-5 h-5" />
                     Language Preference
                   </CardTitle>
