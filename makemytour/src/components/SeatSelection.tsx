@@ -126,7 +126,7 @@ export default function SeatSelection({ isOpen, onClose, flightId, requiredSeats
           </DialogDescription>
         </DialogHeader>
 
-        <div className="grid grid-cols-1  lg:grid-cols-4 gap-6 h-[calc(90vh-110px)] w-xl overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 h-[calc(90vh-110px)] w-xl overflow-hidden">
           {/* Seat Map */}
           <div className="lg:col-span-3 overflow-auto pr-2">
             {/* Legend */}
@@ -260,8 +260,8 @@ export default function SeatSelection({ isOpen, onClose, flightId, requiredSeats
           </div>
 
           {/* Summary Panel */}
-          <div className="lg:col-span-1 w-xl">
-            <Card className="sticky top-4 max-h-[calc(90vh-110px)] w-xl">
+          <div className="lg:col-span-1 w-2xl">
+            <Card className="sticky top-4 max-h-[calc(90vh-110px)] w-2xl">
               <CardContent className="p-4 space-y-4 overflow-auto">
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Selection Summary</h3>
