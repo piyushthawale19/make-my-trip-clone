@@ -35,5 +35,5 @@ build/
 ### VS Code ###
 .vscode/
 
-# Ignore frontend app
-makemytour/
+# # Ignore frontend app
+# makemytour/
