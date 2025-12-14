@@ -260,7 +260,7 @@ export default function SeatSelection({ isOpen, onClose, flightId, requiredSeats
           </div>
 
           {/* Summary Panel */}
-          <div className="lg:col-span-1 lg:w-md">
+          <div className="lg:col-span-1 w-xl">
             <Card className="sticky top-4 max-h-[calc(90vh-110px)]">
               <CardContent className="p-4 space-y-4 overflow-auto">
                 <div>

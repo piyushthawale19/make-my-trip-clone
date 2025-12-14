@@ -299,7 +299,7 @@ export default function RoomSelection({ isOpen, onClose, hotelId, requiredRooms,
           </div>
 
           {/* Summary Panel */}
-          <div className="lg:col-span-1 w-2xl">
+          <div className="lg:col-span-1 w-xl">
             <Card className="sticky top-4">
               <CardContent className="p-4 space-y-4">
                 <div>
@@ -348,22 +348,22 @@ export default function RoomSelection({ isOpen, onClose, hotelId, requiredRooms,
                   const room = rooms.find(r => r.id === id);
                   return room?.type === 'suite' || room?.type === 'deluxe';
                 }) && (
-                  <Card className="bg-gradient-to-r from-yellow-50 to-orange-50">
-                    <CardContent className="p-3">
-                      <div className="flex items-start gap-2">
-                        <Star className="w-5 h-5 text-yellow-600 flex-shrink-0" />
-                        <div className="text-xs">
-                          <p className="font-semibold text-yellow-800 mb-1">Premium Benefits:</p>
-                          <ul className="space-y-1 text-yellow-700">
-                            <li>• Late checkout available</li>
-                            <li>• Welcome drink</li>
-                            <li>• Room service discount</li>
-                          </ul>
+                    <Card className="bg-gradient-to-r from-yellow-50 to-orange-50">
+                      <CardContent className="p-3">
+                        <div className="flex items-start gap-2">
+                          <Star className="w-5 h-5 text-yellow-600 flex-shrink-0" />
+                          <div className="text-xs">
+                            <p className="font-semibold text-yellow-800 mb-1">Premium Benefits:</p>
+                            <ul className="space-y-1 text-yellow-700">
+                              <li>• Late checkout available</li>
+                              <li>• Welcome drink</li>
+                              <li>• Room service discount</li>
+                            </ul>
+                          </div>
                         </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                )}
+                      </CardContent>
+                    </Card>
+                  )}
 
                 {/* Total Cost */}
                 <div className="border-t pt-4">
