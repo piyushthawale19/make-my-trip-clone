@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Determine API URL securely
-let BACKEND_URL = process.env.NEXT_PUBLIC_API_URL;
+let BACKEND_URL = process.env.NEXT_PUBLIC_API_URL_BACKEND;
 
 // Fallback logic: Only use localhost if we are actually running locally
 if (!BACKEND_URL) {
@@ -23,7 +23,7 @@ if (BACKEND_URL && BACKEND_URL.endsWith('/')) {
 }
 
 console.log("Current API Config:", {
-  envUrl: process.env.NEXT_PUBLIC_API_URL,
+  envUrl: process.env.NEXT_PUBLIC_API_URL_BACKEND,
   finalUrl: BACKEND_URL,
   hostname: typeof window !== 'undefined' ? window.location.hostname : 'server'
 });
