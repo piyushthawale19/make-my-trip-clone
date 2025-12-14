@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: make-my-trip-backend
+    env: docker
+    plan: free
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    envVars:
+      - key: PORT
+        value: 8080

@@ -1,0 +1,6 @@
+target
+.git
+.gitignore
+*.md
+makemytour/node_modules
+makemytour/.next
