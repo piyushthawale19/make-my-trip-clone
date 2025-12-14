@@ -300,7 +300,7 @@ export default function RoomSelection({ isOpen, onClose, hotelId, requiredRooms,
 
           {/* Summary Panel */}
           <div className="lg:col-span-1 w-xl">
-            <Card className="sticky top-4">
+            <Card className="sticky top-4 max-h-[calc(90vh-110px)] w-xl">
               <CardContent className="p-4 space-y-4">
                 <div>
                   <h3 className="font-semibold text-lg mb-2">Selection Summary</h3>
