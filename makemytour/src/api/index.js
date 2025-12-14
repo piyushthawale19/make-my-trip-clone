@@ -1,7 +1,12 @@
 import axios from "axios";
 
 // Use localhost for development, deployed URL for production
+// Use localhost for development, deployed URL for production
 const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080";
+console.log("Current API Config:", {
+  envUrl: process.env.NEXT_PUBLIC_API_URL,
+  finalUrl: BACKEND_URL
+});
 
 export const login = async (email, password) => {
   try {
@@ -64,7 +69,7 @@ export const editprofile = async (
     });
     const data = res.data;
     return data;
-  } catch (error) {}
+  } catch (error) { }
 };
 export const getflight = async () => {
   try {
@@ -72,7 +77,8 @@ export const getflight = async () => {
     const data = res.data;
     return data;
   } catch (error) {
-    console.log(data);
+    console.log("Error getting flights:", error);
+    throw error;
   }
 };
 
@@ -135,7 +141,8 @@ export const gethotel = async () => {
     const data = res.data;
     return data;
   } catch (error) {
-    console.log(data);
+    console.log("Error getting hotels:", error);
+    throw error;
   }
 };
 
