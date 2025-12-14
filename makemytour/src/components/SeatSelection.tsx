@@ -114,8 +114,8 @@ export default function SeatSelection({ isOpen, onClose, flightId, requiredSeats
   };
 
   return (
-      <Dialog open={isOpen} onOpenChange={onClose}>
-         <DialogContent className="sm:max-w-[600px] overflow-auto ">
+    <Dialog open={isOpen} onOpenChange={onClose}>
+      <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto ">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-2xl">
             <Plane className="w-6 h-6" />
@@ -126,9 +126,9 @@ export default function SeatSelection({ isOpen, onClose, flightId, requiredSeats
           </DialogDescription>
         </DialogHeader>
 
-           <div className="grid grid-cols-1  lg:grid-cols-4 gap-6 h-[calc(90vh-110px)] w-2xl overflow-hidden">
+        <div className="grid grid-cols-1  lg:grid-cols-4 gap-6 h-[calc(90vh-110px)] w-xl overflow-hidden">
           {/* Seat Map */}
-            <div className="lg:col-span-3 overflow-auto pr-2">
+          <div className="lg:col-span-3 overflow-auto pr-2">
             {/* Legend */}
             <Card className="mb-4">
               <CardContent className="p-4 ">
