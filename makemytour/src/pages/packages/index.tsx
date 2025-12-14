@@ -17,7 +17,7 @@ export default function PackagesPage() {
   const loadPackages = async (type?: string) => {
     setLoading(true);
     try {
-      const data = type && type !== 'ALL' 
+      const data = type && type !== 'ALL'
         ? await getPackagesByType(type)
         : await getAllPackages();
       setPackages(data);
@@ -53,7 +53,7 @@ export default function PackagesPage() {
 
         {/* Filter Tabs */}
         <Tabs value={selectedType} onValueChange={handleTypeChange} className="mb-8">
-          <TabsList className="grid w-full grid-cols-5">
+          <TabsList className="grid w-full grid-cols-5 border border-gray-200">
             <TabsTrigger value="ALL">All Packages</TabsTrigger>
             <TabsTrigger value="BEACH">Beach</TabsTrigger>
             <TabsTrigger value="ADVENTURE">Adventure</TabsTrigger>
