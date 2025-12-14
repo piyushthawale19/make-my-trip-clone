@@ -8,3 +8,19 @@ services:
     envVars:
       - key: PORT
         value: 8080
+      - key: SPRING_DATA_MONGODB_URI
+        sync: false
+
+  - type: web
+    name: make-my-trip-frontend
+    env: node
+    plan: free
+    rootDir: makemytour
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: make-my-trip-backend
+          property: url
