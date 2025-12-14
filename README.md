@@ -1,4 +1,4 @@
- # MakeMyTrip Clone - Full Stack Travel Booking Platform
+# MakeMyTrip Clone - Full Stack Travel Booking Platform
 
 ## 🎯 Complete Feature-Rich Implementation
 
@@ -367,5 +367,3 @@ This project is built for educational and demonstration purposes.
 ---
 
 **Ready to explore? Start with [QUICK_START.md](QUICK_START.md)!** 🚀
-#   m a k e - m y - t r i p - c l o n e  
- 
