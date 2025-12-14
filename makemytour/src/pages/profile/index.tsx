@@ -212,7 +212,7 @@ const ProfilePage = () => {
         </div>
 
         <Tabs defaultValue="profile" className="space-y-6 text-black">
-          <TabsList className="grid w-full grid-cols-4 max-w-2xl text-black border border-gray-200">
+          <TabsList className="grid w-full grid-cols-4 max-w-2xl text-black border border-gray-500">
             <TabsTrigger value="profile">Profile</TabsTrigger>
             <TabsTrigger value="bookings">Bookings</TabsTrigger>
             <TabsTrigger value="payments">Payments</TabsTrigger>

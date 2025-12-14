@@ -69,7 +69,7 @@ export default function RecommendationsPage() {
         </div>
 
         <Tabs defaultValue="flights" className="space-y-6">
-          <TabsList className="grid w-full max-w-md grid-cols-2 border border-gray-200">
+          <TabsList className="grid w-full max-w-md grid-cols-2 border border-gray-500">
             <TabsTrigger value="flights" className="flex items-center gap-2">
               <Plane className="w-4 h-4" />
               Flights
